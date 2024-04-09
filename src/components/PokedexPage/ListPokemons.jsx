@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import PokeCard from "./PokeCard";
-import './Style/PokeCard.css'
 
 const ListPokemons = ({ pokemons }) => {
-  const perPage = 16; 
-  const totalPages = Math.ceil(pokemons.length / perPage);
-
   const [currentPage, setCurrentPage] = useState(1);
-  
+  const perPage = 20; // Cantidad de Pokémon por página
+  const totalPages = Math.ceil((pokemons?.length || 0) / perPage);
+
   const nextPage = () => {
     setCurrentPage(Math.min(currentPage + 1, totalPages));
   };
@@ -20,9 +18,14 @@ const ListPokemons = ({ pokemons }) => {
     setCurrentPage(Math.min(Math.max(page, 1), totalPages));
   };
 
+  // Calcula las páginas a mostrar en la paginación
   const pageNumbers = [];
   for (let i = 1; i <= totalPages; i++) {
     pageNumbers.push(i);
+  }
+
+  if (!pokemons) {
+    return <div>Loading...</div>;
   }
 
   return (
