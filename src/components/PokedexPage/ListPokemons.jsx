@@ -3,7 +3,7 @@ import PokeCard from "./PokeCard";
 
 const ListPokemons = ({ pokemons }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const perPage = 20; // Cantidad de Pokémon por página
+  const perPage = 16;
   const totalPages = Math.ceil((pokemons?.length || 0) / perPage);
 
   const nextPage = () => {
@@ -18,7 +18,6 @@ const ListPokemons = ({ pokemons }) => {
     setCurrentPage(Math.min(Math.max(page, 1), totalPages));
   };
 
-  // Calcula las páginas a mostrar en la paginación
   const pageNumbers = [];
   for (let i = 1; i <= totalPages; i++) {
     pageNumbers.push(i);
