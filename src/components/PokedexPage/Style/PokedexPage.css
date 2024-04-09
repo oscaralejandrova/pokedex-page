@@ -1,0 +1,62 @@
+
+.color__red {
+    background-color: red;
+   width: 100%;
+   height: 70px;
+}
+.color__black {
+    background-color:black;
+    width: 100%;
+    height: 40px;
+}
+.pokedex-title-1 {
+    padding: 0.1rem 7rem;
+    position: absolute;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #969695;
+    text-shadow: 4px 2px  2px rgb(1, 1, 1);
+    margin-top: -92px;
+}
+.welcome-text {
+    padding: 0.5rem 7rem;
+
+    color: black; 
+}
+
+.red-text {
+    
+    color: red; 
+}
+.btn__Search {
+    position: relative;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    background-color: #fff;
+    color: #333;
+    width: 200px;
+    margin-left: 110px;
+
+}
+.btn {
+    position: relative;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    color: #e9e7e7;
+    width: 200px;
+    background-color: red;
+    list-style: none;
+    border: none;
+}
+.hola {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #333;
+    width: 200px;
+    margin-left: 520px;
+    top: -38px;
+    position: relative;
+}

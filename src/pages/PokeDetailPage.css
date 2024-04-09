@@ -1,0 +1,154 @@
+
+.poke-detail-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .poke-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .poke-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .poke-id {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    color: #888;
+  }
+  
+  .poke-info {
+    /* display: inline; */
+    font-size: 14px;
+    margin-top: 9px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 160px;
+  
+ }
+  
+  .poke-subtitle {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    justify-content: center;
+    margin-right: 50%;
+  }
+  .poke-subtitle-2 {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -63px;
+    justify-content: center;
+    margin-left: 50%;
+  }
+  
+  .poke-list {
+
+    /* display: flex; */
+    list-style: none;
+    padding: 0;
+   margin-left: 22%;
+  }
+  .poke-list-2 {
+
+    /* display: flex; */
+    list-style: none;
+    padding: 0;
+   margin-left: 68%;
+  }
+  
+  .poke-type {
+    
+    font-size: 14px;
+    margin-bottom: 5px;
+    background-color: aqua;
+    width: 40px;
+    border-radius: 2px;
+  }
+  
+  .poke-stat {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .poke-move {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .progress-bar-container {
+    width: 100%; 
+    height: 25px; 
+    border: 1px solid #ccc;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #efae43; 
+    transition: width 0.5s ease-in-out;
+  }
+  .poke-moves-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: px;
+  }
+  
+  .poke-move {
+    background-color: #c4c3c3;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 5px;
+  }
+  .bar__color {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: #929191;
+  }
+
+
+.poke-types-container {
+  margin-top: 20px;
+  margin-left: 90px;
+}
+.poke-type-container {
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px 3px;
+  margin-right: 4px;
+
+}
+
+.grass {
+ background-color:  green;
+  color: white;
+}
+
+.fire {
+  background-color: red;
+  color: white;
+}
+
+.water {
+  background-color: blue;
+  color: white;
+}
+

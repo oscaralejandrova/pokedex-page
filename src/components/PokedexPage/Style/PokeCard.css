@@ -1,0 +1,150 @@
+.card {
+    width: 100%;
+    max-width: 25em;
+    border: 0.5em solid #ccc;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+.card__header {
+    background-color: blueviolet;
+    width: 100%;
+    aspect-ratio: 2;
+    position: relative;
+    border-radius: 0.4em;
+}
+
+.card__img {
+    position: absolute;
+    width: 55%;
+    top: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card__principal {
+    margin-top: 3.5em;
+}
+
+.card__name {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+}
+
+.card__types {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    list-style: none;
+    padding: 0; 
+}
+
+.card__type {
+    text-transform: capitalize;  
+}
+
+.card__type:not(:first-child)::before {
+    content: '/'; 
+    padding-right: 0.5em;
+}
+
+.card__hr {
+    --margin-y:0.8em;
+    margin-top: var(--margin-y);
+    margin-bottom: var(--margin-y);
+    border-top: 1px solid #ccc5;
+    margin-inline: 2em;
+}
+
+.card__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1em;
+}
+
+.card__stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    align-items: center;
+}
+
+.card__stat__label {
+    font-size: 0.7em;
+    text-transform: uppercase;
+}
+
+.card__stat__value {
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+.bg-grass {
+    background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #cae099 99.08%);
+}
+
+.b-fire {
+    background: linear-gradient(178.92deg, #F96D6F 0.92%, #E35825 47.96%, #E8AE1B 99.08%);
+}
+
+.bg-water {
+    background: linear-gradient(178.92deg, #133258 0.92%, #1479fB 47.96%, #82B2F1 99.08%);
+}
+
+.color-electric {
+    color: rgb(216, 210, 35);
+}
+
+.color-water {
+    color: rgb(30, 12, 170);
+}
+
+.color-fire {
+    color: rgb(217, 93, 16);
+}
+
+.color-grass {
+    color: rgb(0, 128, 0);
+}
+
+.border-grass {
+    border-color: rgb(0, 128, 0);
+}
+
+.border-fire {
+    border-color: rgb(217, 94, 16);
+}
+
+.border-water {
+    border-color: rgb(38, 12, 170);
+}
+.pokeCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+}
+
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pagination button {
+    margin: 0 5px; 
+  }
+  
+  .pagination button.active {
+    font-weight: bold; 
+  }
+  
